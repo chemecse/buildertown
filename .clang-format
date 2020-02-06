@@ -1,0 +1,16 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 2
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
+UseTab: Never
+TabWidth: 2
+BreakBeforeBraces: Linux
+AllowShortIfStatementsOnASingleLine: true
+ObjCBlockIndentWidth: 2
+IndentCaseLabels: false
+AccessModifierOffset: 0
+ColumnLimit: 0
+Standard: Cpp03
+...

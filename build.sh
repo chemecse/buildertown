@@ -6,6 +6,11 @@ set -eu
 
 mkdir -p ./dist
 
+if [ `command -v clang-format -h` ]; then
+  clang-format demo.c > demo.c.tmp
+  mv demo.c.tmp demo.c
+fi
+
 gcc demo.c watt_math.c watt_buffer.c \
 	-DSOKOL_METAL=1 \
 	-o ./dist/demo \
