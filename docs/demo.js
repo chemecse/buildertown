@@ -38,7 +38,7 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = './www/demo.data';
+    var PACKAGE_NAME = './docs/demo.data';
     var REMOTE_PACKAGE_BASE = 'demo.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
@@ -170,10 +170,10 @@ Module['FS_createPath']('/', 'assets', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_./www/demo.data');
+              Module['removeRunDependency']('datafile_./docs/demo.data');
 
     };
-    Module['addRunDependency']('datafile_./www/demo.data');
+    Module['addRunDependency']('datafile_./docs/demo.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -194,7 +194,7 @@ Module['FS_createPath']('/', 'assets', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 68762, "filename": "/assets/toob.gltf"}, {"start": 68762, "audio": 0, "end": 130156, "filename": "/assets/plus.gltf"}, {"start": 130156, "audio": 0, "end": 177096, "filename": "/assets/reggie.gltf"}, {"start": 177096, "audio": 0, "end": 247204, "filename": "/assets/rolo.gltf"}], "remote_package_size": 247204, "package_uuid": "cfc108c1-1345-4659-ac15-510a67443de0"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 68762, "filename": "/assets/toob.gltf"}, {"start": 68762, "audio": 0, "end": 130156, "filename": "/assets/plus.gltf"}, {"start": 130156, "audio": 0, "end": 177096, "filename": "/assets/reggie.gltf"}, {"start": 177096, "audio": 0, "end": 247204, "filename": "/assets/rolo.gltf"}], "remote_package_size": 247204, "package_uuid": "cbbf7d2f-f61e-426f-894f-a86cde6a5140"});
 
 })();
 

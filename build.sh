@@ -24,7 +24,7 @@ gcc demo.c watt_math.c watt_buffer.c watt_input.c \
 
 emcc demo.c watt_math.c watt_buffer.c watt_input.c \
   -DSOKOL_GLES2=1 \
-  -o ./www/demo.js \
+  -o ./docs/demo.js \
   --preload-file assets/toob.gltf \
   --preload-file assets/plus.gltf \
   --preload-file assets/reggie.gltf \
