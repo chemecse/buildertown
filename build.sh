@@ -11,7 +11,7 @@ if [ `command -v clang-format -h` ]; then
   mv demo.c.tmp demo.c
 fi
 
-gcc demo.c watt_math.c watt_buffer.c \
+gcc demo.c watt_math.c watt_buffer.c watt_input.c \
 	-DSOKOL_METAL=1 \
 	-o ./dist/demo \
 	-ObjC \
@@ -22,7 +22,7 @@ gcc demo.c watt_math.c watt_buffer.c \
 	-framework MetalKit \
 	-framework AudioToolbox
 
-emcc demo.c watt_math.c watt_buffer.c \
+emcc demo.c watt_math.c watt_buffer.c watt_input.c \
 	-DSOKOL_GLES2=1 \
 	-o ./dist/demo.js \
   --preload-file assets/toob.gltf \
