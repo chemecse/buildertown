@@ -24,6 +24,11 @@ gcc demo.c watt_math.c watt_buffer.c watt_input.c \
 
 emcc demo.c watt_math.c watt_buffer.c watt_input.c \
   -DSOKOL_GLES2=1 \
+  -O2 \
+  -Os \
+  -s USE_WEBGL2=1 \
+  -s FULL_ES3=1 \
+  -s --closure 1 \
   -o ./docs/demo.js \
   --preload-file assets/toob.gltf \
   --preload-file assets/plus.gltf \
